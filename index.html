@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Sapperdeflap</title>
+</head>
+<body>
+  
+  <header>
+    <h1>Sapperdeflap</h1>
+    <p>It's a small demo administering our quote api</p>
+  </header>
+
+  <main>  
+    <button>Add Quote</button>
+    <button>Add Author</button>
+
+    
+    <form id="quoteForm" action="https://quote.api.fdnd.nl/v1/quote" method="post">
+      <fieldset id="quote">
+
+        <label for="authorId">Author</label>
+        <select name="autorId" id="authorId"></select>
+
+        <label for="tags">Tags</label>
+        <input name="tags" id="tags" type="text">
+
+        <label for="text">Quote</label>
+        <textarea name="text" id="text"></textarea>
+
+        <button type="submit">Add</button>
+        <button type="reset">Cancel</button>
+      </fieldset>
+    </form>
+
+    <form id="authorForm" action="https://quote.api.fdnd.nl/v1/author" method="post">
+      <fieldset id="author">
+
+        <label for="name">Name</label>
+        <input name="name" id="name" type="text">
+
+        <label for="bio">Biography</label>
+        <textarea name="bio" id="bio"></textarea>
+
+        <label for="avatar">Avatar</label>
+        <input type="url" name="avatar" id="avatar">
+
+        <button type="submit">Add</button>
+        <button type="reset">Cancel</button>
+
+      </fieldset>
+    </form>
+
+    <section>
+      <h2>Quotes currently in the API</h2>
+      <div></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyleft 2022, all wrongs reversed.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

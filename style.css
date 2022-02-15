@@ -1,0 +1,24 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+form {
+  display: none;
+}
+form.active {
+  display: block;
+}
+
+section div {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+blockquote {
+  width: 18em;
+}
+blockquote cite {
+  display: block;
+  position: relative;
+  font-size: 0.8em;
+}
