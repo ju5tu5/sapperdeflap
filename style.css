@@ -1,5 +1,6 @@
 body {
   font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 form {
@@ -8,6 +9,23 @@ form {
 form.active {
   display: block;
 }
+fieldset {
+  width: 22rem;
+}
+fieldset label {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+fieldset input,
+fieldset select,
+fieldset textarea {
+  width: 20rem;
+}
+fieldset button {
+  margin-top: 0.4rem;
+  width: 10rem;
+}
 
 section div {
   display: flex;
@@ -15,10 +33,10 @@ section div {
 }
 
 blockquote {
-  width: 18em;
+  width: 18rem;
 }
 blockquote cite {
   display: block;
   position: relative;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
